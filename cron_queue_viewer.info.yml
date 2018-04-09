@@ -1,0 +1,5 @@
+name: 'Cron & Queue viewer'
+type: module
+description: 'This module list all hook_cron and queues, displaying some information and allowing you to run them manually.'
+core: 8.x
+package: 'Development'

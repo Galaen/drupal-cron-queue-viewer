@@ -1,0 +1,7 @@
+name: 'Cron/Queue viewer test'
+type: module
+description: 'Test for the Cron/Queue Viewer'
+core: 8.x
+package: 'Test'
+dependencies:
+  - cron_queue_viewer

@@ -1,0 +1,9 @@
+
+cron_queue_viewer_test.cron_queue_viewer_test_form:
+  path: '/admin/cronqueueviewer/tests/test'
+  defaults:
+    _form: '\Drupal\cron_queue_viewer_test\Form\CronQueueViewerTestForm'
+    _title: 'CronQueueViewerTestForm'
+  requirements:
+    _access: 'TRUE'
+  

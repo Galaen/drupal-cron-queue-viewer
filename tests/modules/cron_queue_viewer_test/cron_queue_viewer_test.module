@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains cron_queue_viewer_test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cron_queue_viewer_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cron_queue_viewer_test module.
+    case 'help.page.cron_queue_viewer_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Test for the Cron/Queue Viewer') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function cron_queue_viewer_test_cron() {
+  \Drupal::logger('cron_queue_viewer_test')->debug('cron start');
+  sleep(2);
+  \Drupal::logger('cron_queue_viewer_test')->debug('cron end');
+}

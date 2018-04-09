@@ -1,0 +1,4 @@
+cron queue viewer:
+  title: 'Cron & Queue viewer'
+  description: 'Display all the cron tasks & queue workers. It is also possible to run them manually and delete a queue.'
+  restrict access: true

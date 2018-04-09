@@ -1,0 +1,31 @@
+cron_queue_viewer.cron_queue_viewer_form:
+  path: '/admin/cronqueueviewer'
+  defaults:
+    _form: '\Drupal\cron_queue_viewer\Form\CronQueueViewerForm'
+    _title: 'CronQueueViewerForm'
+  requirements:
+    _permission: 'cron queue viewer'
+
+cron_queue_viewer.cron_run:
+  path: '/admin/cronqueueviewer/run/cron/{cid}'
+  defaults:
+    _controller: '\Drupal\cron_queue_viewer\Controller\CronQueueViewerController::runCron'
+    _title: 'run'
+  requirements:
+    _permission: 'cron queue viewer'
+
+cron_queue_viewer.queue_run:
+  path: '/admin/cronqueueviewer/run/queue/{qid}'
+  defaults:
+    _controller: '\Drupal\cron_queue_viewer\Controller\CronQueueViewerController::runQueue'
+    _title: 'run'
+  requirements:
+    _permission: 'cron queue viewer'
+
+cron_queue_viewer.queue_delete:
+  path: '/admin/cronqueueviewer/delete/queue/{qid}'
+  defaults:
+    _controller: '\Drupal\cron_queue_viewer\Controller\CronQueueViewerController::deleteQueue'
+    _title: 'run'
+  requirements:
+    _permission: 'cron queue viewer'
