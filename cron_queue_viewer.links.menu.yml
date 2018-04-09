@@ -1,0 +1,5 @@
+cron_queue_viewer.cron_queue_viewer_form:
+  title: 'Cron & Queue viewer'
+  description: 'List all hook_cron and queues.'
+  route_name: cron_queue_viewer.cron_queue_viewer_form
+  parent: system.admin_config_system
